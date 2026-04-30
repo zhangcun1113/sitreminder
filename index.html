@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SitReminder — Mac 久坐提醒工具 | macOS 菜单栏定时站立提醒</title>
 
-    <meta name="description" content="SitReminder — macOS 菜单栏久坐提醒工具，实时倒计时提醒你站起来活动，支持自定义久坐间隔和休息时长，悬浮窗显示，一键暂停恢复。买断制 ¥29，限时1折仅 ¥2.9。">
+    <meta name="description" content="SitReminder — macOS 菜单栏久坐提醒工具，实时倒计时提醒你站起来活动，支持自定义久坐间隔和休息时长，悬浮窗显示，一键暂停恢复。买断制 ¥29。">
     <meta name="keywords" content="久坐提醒,mac久坐提醒,macOS菜单栏,站立提醒,番茄钟,SitReminder,腰椎健康,护腰,程序员健康,Mac效率工具,休息提醒,sit reminder,posture reminder">
     <meta name="author" content="SitReminder">
     <link rel="canonical" href="https://ifadian.fasthub.qzz.io/">
 
     <!-- Open Graph -->
     <meta property="og:title" content="SitReminder · macOS 菜单栏久坐提醒工具">
-    <meta property="og:description" content="菜单栏实时倒计时，提醒你定时站起来。不打扰，不复杂，买断永久用。原价¥29，限时1折¥2.9。">
+    <meta property="og:description" content="菜单栏实时倒计时，提醒你定时站起来。不打扰，不复杂，买断永久用，¥29。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ifadian.fasthub.qzz.io/">
     <meta property="og:locale" content="zh_CN">
@@ -20,7 +20,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="SitReminder · macOS 菜单栏久坐提醒工具">
-    <meta name="twitter:description" content="菜单栏实时倒计时，提醒你定时站起来。买断制，限时1折¥2.9。">
+    <meta name="twitter:description" content="菜单栏实时倒计时，提醒你定时站起来。买断制，¥29。">
 
     <!-- 搜索引擎验证（提交后替换为你自己的验证码） -->
     <meta name="google-site-verification" content="XjA_pGer03M0NSsTMK-iss5OC8GcLQ3TdxE-xbDPEJI">
@@ -38,9 +38,8 @@
       "softwareVersion": "1.2.3",
       "offers": {
         "@type": "Offer",
-        "price": "2.9",
-        "priceCurrency": "CNY",
-        "priceValidUntil": "2026-04-30"
+        "price": "29",
+        "priceCurrency": "CNY"
       },
       "url": "https://ifadian.fasthub.qzz.io/"
     }
@@ -86,37 +85,6 @@
             padding: 48px 24px 80px;
             position: relative;
             z-index: 1;
-        }
-
-        /* ── 倒计时横幅 ── */
-        .countdown-banner {
-            background: var(--accent);
-            color: #fff;
-            text-align: center;
-            padding: 12px 20px;
-            font-family: 'DM Mono', monospace;
-            font-size: 0.85rem;
-            letter-spacing: 0.06em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 16px;
-            flex-wrap: wrap;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        #countdown, #countdown2 {
-            font-family: 'DM Mono', monospace;
-            font-variant-numeric: tabular-nums;
-            letter-spacing: 0.03em;
-        }
-        #countdown {
-            background: rgba(255,255,255,0.2);
-            padding: 3px 12px;
-            font-weight: 700;
-            letter-spacing: 0.12em;
         }
 
         /* ── HERO ── */
@@ -182,13 +150,6 @@
             justify-content: center;
         }
 
-        .price-original {
-            font-family: 'DM Mono', monospace;
-            font-size: 1.2rem;
-            color: var(--muted);
-            text-decoration: line-through;
-        }
-
         .price-now {
             font-size: 2.8rem;
             font-weight: 900;
@@ -197,16 +158,6 @@
         }
 
         .price-now sup { font-size: 1.2rem; vertical-align: super; }
-
-        .price-badge {
-            background: var(--accent);
-            color: #fff;
-            font-family: 'DM Mono', monospace;
-            font-size: 0.72rem;
-            font-weight: 700;
-            padding: 5px 12px;
-            letter-spacing: 0.08em;
-        }
 
         .download-row {
             display: flex;
@@ -338,19 +289,9 @@
             padding: 4px 20px; white-space: nowrap;
         }
 
-        .buy-deadline {
-            font-family: 'DM Mono', monospace; font-size: 0.82rem;
-            color: var(--accent); letter-spacing: 0.1em; margin-bottom: 20px;
-        }
-
         .buy-price-row {
             display: flex; align-items: center; justify-content: center;
             gap: 20px; margin-bottom: 8px; flex-wrap: wrap;
-        }
-
-        .buy-original {
-            font-family: 'DM Mono', monospace; font-size: 1.6rem;
-            color: #bbb; text-decoration: line-through;
         }
 
         .buy-now {
@@ -430,11 +371,6 @@
         @media (max-width: 640px) {
             .container { padding: 24px 16px 48px; }
 
-            .countdown-banner {
-                font-size: 0.7rem; gap: 6px; padding: 8px 12px;
-                flex-direction: column; line-height: 1.6;
-            }
-
             .hero { padding: 32px 16px 28px; }
             h1 { font-size: clamp(2.4rem, 10vw, 4rem); margin-bottom: 14px; }
             .stamp { font-size: 0.65rem; padding: 3px 10px; margin-bottom: 20px; }
@@ -443,8 +379,6 @@
 
             .price-hero { padding: 12px 20px; gap: 12px; }
             .price-now { font-size: 2.2rem; }
-            .price-original { font-size: 1rem; }
-
             .download-row { flex-direction: column; align-items: stretch; gap: 10px; }
             .btn { justify-content: center; padding: 12px 16px; font-size: 0.82rem; }
             .btn::after { display: none; }
@@ -473,13 +407,6 @@
 </head>
 <body>
 
-<!-- ── 限时倒计时横幅 ── -->
-<div class="countdown-banner">
-    <span>🔥 限时1折 · 4月30日截止</span>
-    <span id="countdown">--天 --:--:--</span>
-    <span>原价¥29 → 现在只要 <strong>¥2.9</strong></span>
-</div>
-
 <div class="container">
 
     <!-- ── HERO ── -->
@@ -490,9 +417,7 @@
         <div class="sub-tagline">不打扰 · 不复杂 · 默默守护你的腰椎</div>
 
         <div class="price-hero">
-            <span class="price-original">¥29</span>
-            <span class="price-now"><sup>¥</sup>2.9</span>
-            <span class="price-badge">4月30日截止</span>
+            <span class="price-now"><sup>¥</sup>29</span>
         </div>
 
         <div class="download-row">
@@ -503,7 +428,7 @@
         <div class="download-row">
             <a href="https://ifdian.net/item/a41c6c2c37d111f1b52d52540025c377"
                class="btn btn-buy" target="_blank" rel="noopener">
-                💳 立即购买激活码 · ¥2.9
+                💳 立即购买激活码 · ¥29
             </a>
         </div>
         <p class="hero-note">买断制 · 一次购买永久使用 · 支持 1 台设备</p>
@@ -569,12 +494,10 @@
 
     <!-- ── 购买区 ── -->
     <div class="buy-section">
-        <div class="buy-label">限时优惠 · 4月30日截止</div>
-        <div class="buy-deadline">⏰ 距截止还剩 <span id="countdown2">--天 --:--:--</span></div>
+        <div class="buy-label">买断制 · 一次购买永久使用</div>
 
         <div class="buy-price-row">
-            <span class="buy-original">¥29</span>
-            <span class="buy-now"><sup>¥</sup>2.9</span>
+            <span class="buy-now"><sup>¥</sup>29</span>
         </div>
         <div class="buy-desc">BUY ONCE · USE FOREVER · 1 DEVICE</div>
         <p class="buy-note">买断制，一次购买永久使用，后续版本免费更新</p>
@@ -614,10 +537,6 @@
             <summary>购买后怎么收到激活码？<span class="arrow">▶</span></summary>
             <div class="faq-a">在爱发电完成支付后，激活码会显示在订单详情页，同时爱发电会发送通知。打开 SitReminder → 输入激活码 → 点击激活，立即解锁。</div>
         </details>
-        <details class="faq-item">
-            <summary>4月30日后价格会涨回¥29吗？<span class="arrow">▶</span></summary>
-            <div class="faq-a">是的，4月30日后恢复原价¥29。现在购买锁定¥2.9，后续版本更新完全免费，和原价用户享受完全相同的功能。</div>
-        </details>
     </div>
 
     <!-- ── SEO 文案 ── -->
@@ -645,26 +564,6 @@
 
 <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // 倒计时截止 2026-04-30 23:59:59 北京时间
-    function updateCountdown() {
-        const deadline = new Date('2026-04-30T23:59:59+08:00');
-        const now = new Date();
-        const diff = deadline - now;
-        const els = [document.getElementById('countdown'), document.getElementById('countdown2')];
-        if (diff <= 0) {
-            els.forEach(el => { if (el) el.textContent = '优惠已结束'; });
-            return;
-        }
-        const d = Math.floor(diff / 86400000);
-        const h = Math.floor((diff % 86400000) / 3600000);
-        const m = Math.floor((diff % 3600000) / 60000);
-        const s = Math.floor((diff % 60000) / 1000);
-        const str = `${d}天 ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-        els.forEach(el => { if (el) el.textContent = str; });
-    }
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
 
 </script>
 </body>
